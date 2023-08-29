@@ -1,0 +1,11 @@
+wp) cirrusrays@ip-172-31-37-150:~/hawp_cirr/hawp$ python scripts/test.py --config-file config-files/hawp.yaml --model_path outputs/hawp/model_00030.pth --display
+2023-05-05 09:15:27,965 hawp INFO: Namespace(config_file='config-files/hawp.yaml', display=True, model_path='outputs/hawp/model_00030.pth', opts=[], output='./results/', rgp=False, threshold=10.0)
+2023-05-05 09:15:27,965 hawp INFO: Loaded configuration file config-files/hawp.yaml
+/home/cirrusrays/.conda/envs/hawp/lib/python3.6/site-packages/torch/utils/data/dataloader.py:477: UserWarning: This DataLoader will create 12 worker processes in total. Our suggested max number of worker in current system is 8, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+2023-05-05 09:15:32,313 hawp.testing INFO: Testing on wireframe_test dataset
+750it [01:09, 10.86it/s]
+2023-05-05 09:16:42,013 hawp.testing INFO: Writing the results of the wireframe_test dataset with length 750 into outputs/hawp/wireframe_test.json
+2023-05-05 09:16:42,660 hawp.testing INFO: evaluating the results on the wireframe_test dataset
+sAP10.0 : 83.9 F1 : 86.9 F1(sAP, F1) : 85.4
+
